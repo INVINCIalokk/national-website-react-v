@@ -11,7 +11,7 @@ export const MainNavBar = () => {
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>NA</AvatarFallback>
               </Avatar>
-              <h1>NATIONAL ACADMEY</h1>
+              <h1 className='md:text-3xl font-serif font-bold'>NATIONAL ACADMEY</h1>
             </a>
             <nav className="hidden md:flex justify-center items-center space-x-2 ">
             <>

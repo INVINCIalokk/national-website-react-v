@@ -17,12 +17,12 @@ const HeroSection = () => {
           <Card
             className="grid relative max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 bg-indigo-950 p-8 rounded-lg shadow-lg md:gap-16"
           >
-            <div className="flex flex-col justify-center pl-10 z-10 md:order-2 space-y-2">
+            <div className="flex flex-col justify-center z-10 md:order-2 space-y-2">
               <div className="mb-4 md:mb-8">
                 <h3 className="text-white text-base md:text-lg font-medium">
                   Since 2018
                 </h3>
-                <h1 className="text-primary text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight">
+                <h1 className="text-primary  font-serif text-6xl sm:text-8xl md:text-7xl font-bold tracking-tight">
                   NATIONAL ACADEMY
                 </h1>
                 <div className="absolute h-full w-full left-0 top-0 -z-10">
