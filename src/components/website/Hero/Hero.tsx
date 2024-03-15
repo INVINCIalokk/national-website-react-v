@@ -15,14 +15,14 @@ const HeroSection = () => {
           <div className="h-14"></div>
           <div className="container mb-3">
           <Card
-            className="grid relative max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 bg-amber-300 p-8 rounded-lg shadow-lg md:gap-16"
+            className="grid  border-none relative max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 bg-transparent p-8 rounded-lg shadow-lg md:gap-16"
           >
             <div className="flex flex-col justify-center z-10 md:order-2 space-y-2">
               <div className="mb-4 md:mb-8">
                 <h3 className="text-indigo-950 text-base md:text-lg font-medium">
                   Since 2018
                 </h3>
-                <h1 className="text-primary font-serif text-5xl md:text-7xl sm:text-6xl  font-bold tracking-tight">
+                <h1 className="text-primary font-serif text-5xl md:text-7xl sm:text-6xl font-extrabold md:font-bold tracking-normal">
                   NATIONAL ACADEMY
                 </h1>
                 <div className="absolute h-full w-full left-0 top-0 -z-100">
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 </p>
               </div>
               <button className="px-4 py-4 rounded-md font-semibold bg-primary text-primary-foreground text-lg hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-                <Contact2 className="mr-2 font-serif font-semibold inline-block" /> Contact Us
+                <Contact2 className="mr-2 font-serif cursor-text font-semibold inline-block" /> Contact Us
               </button>
             </div>
             <div className="flex items-center justify-center md:order-1">

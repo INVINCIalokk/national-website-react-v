@@ -20,7 +20,7 @@ const CarouselHero = () => {
       delay: 2000,
     }),
   ]} 
-  className="bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-md shadow-md">
+  className="rounded-md">
     <CarouselContent>
       {[one, two, three].map((imageSrc, index) => (
         <CarouselItem key={index} className="flex items-center justify-center p-4">
