@@ -13,19 +13,19 @@ const HeroSection = () => {
     return (
       <div className="relative bg-gradient-to-br  from-indigo-400 to-indigo-200 md:h-hero" > {/* Responsive container */}
           <div className="h-14"></div>
-          <div>
+          <div className="container mb-3">
           <Card
-            className="grid relative max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 bg-indigo-950 p-8 rounded-lg shadow-lg md:gap-16"
+            className="grid  border-none relative max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 bg-transparent p-8 rounded-lg shadow-lg md:gap-16"
           >
             <div className="flex flex-col justify-center z-10 md:order-2 space-y-2">
               <div className="mb-4 md:mb-8">
-                <h3 className="text-white text-base md:text-lg font-medium">
+                <h3 className="text-indigo-950 text-base md:text-lg font-medium">
                   Since 2018
                 </h3>
-                <h1 className="text-primary  font-serif text-6xl sm:text-8xl md:text-7xl font-bold tracking-tight">
+                <h1 className="text-primary font-serif text-5xl md:text-7xl sm:text-6xl font-extrabold md:font-bold tracking-normal">
                   NATIONAL ACADEMY
                 </h1>
-                <div className="absolute h-full w-full left-0 top-0 -z-10">
+                <div className="absolute h-full w-full left-0 top-0 -z-100">
                 {/* Core component */}
                 <SparklesCore
                   background="transparent"
@@ -37,12 +37,12 @@ const HeroSection = () => {
                 />
  
                 </div>
-                <p className="text-white text-base mb-4 md:text-lg">
+                <p className="text-indigo-950 text-base mb-4 md:text-lg">
                   Entrance is the key to success
                 </p>
               </div>
-              <button className="px-4 py-2 rounded-md border border-primary-foreground bg-primary text-primary-foreground text-lg hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-                <Contact2 className="mr-2 inline-block" /> Contact Us
+              <button className="px-4 py-4 rounded-md font-semibold bg-primary text-primary-foreground text-lg hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                <Contact2 className="mr-2 font-serif cursor-text font-semibold inline-block" /> Contact Us
               </button>
             </div>
             <div className="flex items-center justify-center md:order-1">
@@ -50,6 +50,7 @@ const HeroSection = () => {
             </div>
           </Card>
           </div>
+          <div className="h-14"></div>
           {/* Mobile version hidden */}
           <div className="hidden md:block">
             <div className="absolute top-64 left-10 opacity-50 -rotate-12">

@@ -5,18 +5,18 @@ import { Links } from "@/data/Links";
 
 export const MainNavBar = () => {
     return (
-      <header className="flex sticky top-0 border-b  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60  justify-between items-center px-14 py-1 w-full z-50">
+      <header className="flex sticky top-0 border-b bg-slate-50/60 backdrop-blur supports-[backdrop-filter]:bg-background/60 justify-between items-center px-4 md:px-12 py-1 w-full z-50">
             <a href="/" className="flex items-center text-xl sm:text-2xl font-bold text-primary space-x-2">
-              <Avatar className="h-12 w-12">
+              <Avatar className="h-11 w-11">
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>NA</AvatarFallback>
               </Avatar>
-              <h1 className='md:text-3xl font-serif font-bold'>NATIONAL ACADMEY</h1>
+              <h1 className='md:text-2xl font-serif md:p-2 font-bold'>NATIONAL ACADMEY</h1>
             </a>
             <nav className="hidden md:flex justify-center items-center space-x-2 ">
             <>
               {Links.map(({ href, text }) => (
-                <a key={href} href={href} className="text-sm font-medium text-primary bg-gray-50 p-2 rounded-lg hover:text-white hover:bg-blue-500">{text}</a>
+                <a key={href} href={href} className="text-sm font-semibold text-primary bg-gray-50 p-2 rounded-lg hover:text-white hover:bg-indigo-800">{text}</a>
               ))}
             </>
             <button className="p-[3px] relative">
