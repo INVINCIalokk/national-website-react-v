@@ -5,6 +5,7 @@ import SecondaryNavBar from './components/website/SecondaryNavBar'
 import { ThemeProvider } from "@/components/Theme-provider"
 import { TracingBeam } from './components/ui/tracing-beam';
 import  LayoutGridDemo from './components/website/Toppers/ToppersSection';
+import TestimonialSection from './components/website/Testimonials/TestimonialSection'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <HeroSection/>
         <CoursesSection/>
         <LayoutGridDemo/>
+        <TestimonialSection/>
       </TracingBeam>
     </ThemeProvider>
   )
