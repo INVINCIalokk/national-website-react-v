@@ -1,7 +1,6 @@
 import { Testimonial,testimonials } from "@/data/Testimonial";
 
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 
 const TestimonialSection = function TestimonialSection() {
