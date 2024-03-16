@@ -5,14 +5,15 @@ export const cards = [
       content: '',
       className: "col-span-1 ",
       thumbnail:
-      'src/assets/4.png'
+      '../../src/assets/4.png'
+      //src\assets\4.png
     },
     {
       id: 2,
       content: '',
       className: "col-span-1",
       thumbnail:
-      'src/assets/6.png'
+      '../../src/assets/5.png'
 
     },
     {
@@ -20,6 +21,6 @@ export const cards = [
       content: '',
       className: "col-span-1",
       thumbnail:
-      'src/assets/7.png'
+      '../../src/assets/7.png'
     },
   ];
