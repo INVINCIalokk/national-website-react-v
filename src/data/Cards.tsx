@@ -1,3 +1,6 @@
+import Image1 from '@/assets/5.png'
+import Image2 from '@/assets/5.png'
+import Image3 from '@/assets/5.png'
 
 export const cards = [
     {
@@ -5,7 +8,7 @@ export const cards = [
       content: '',
       className: "col-span-1 ",
       thumbnail:
-      '../../src/assets/4.png'
+       Image1
       //src\assets\4.png
     },
     {
@@ -13,7 +16,7 @@ export const cards = [
       content: '',
       className: "col-span-1",
       thumbnail:
-      '../../src/assets/5.png'
+      Image2
 
     },
     {
@@ -21,6 +24,6 @@ export const cards = [
       content: '',
       className: "col-span-1",
       thumbnail:
-      '../../src/assets/7.png'
+      Image3
     },
   ];
