@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/Theme-provider"
 import { TracingBeam } from './components/ui/tracing-beam';
 import  LayoutGridDemo from './components/website/Toppers/ToppersSection';
 import TestimonialSection from './components/website/Testimonials/TestimonialSection'
+import AboutUsSection from './components/website/About_Us/AboutUsSection'
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <CoursesSection/>
         <LayoutGridDemo/>
         <TestimonialSection/>
+        <AboutUsSection/>
       </TracingBeam>
     </ThemeProvider>
   )
