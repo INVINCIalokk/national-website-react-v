@@ -1,6 +1,6 @@
 import Image1 from '@/assets/5.png'
-import Image2 from '@/assets/5.png'
-import Image3 from '@/assets/5.png'
+import Image2 from '@/assets/6.png'
+import Image3 from '@/assets/7.png'
 
 export const cards = [
     {

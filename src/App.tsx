@@ -7,6 +7,7 @@ import { TracingBeam } from './components/ui/tracing-beam';
 import  LayoutGridDemo from './components/website/Toppers/ToppersSection';
 import TestimonialSection from './components/website/Testimonials/TestimonialSection'
 import AboutUsSection from './components/website/About_Us/AboutUsSection'
+import ContactSection from './components/website/ContactUs/ContactSection'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <LayoutGridDemo/>
         <TestimonialSection/>
         <AboutUsSection/>
+        <ContactSection/>
       </TracingBeam>
     </ThemeProvider>
   )

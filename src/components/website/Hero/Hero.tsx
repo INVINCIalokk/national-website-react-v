@@ -11,7 +11,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 const HeroSection = () => {
     return (
-      <div className="relative bg-gradient-to-br  from-indigo-400 to-indigo-200 md:h-hero" > {/* Responsive container */}
+      <div id="home" className="relative bg-gradient-to-br  from-indigo-400 to-indigo-200 md:h-hero" > {/* Responsive container */}
           <div className="h-14"></div>
           <div className="container mb-3">
           <Card

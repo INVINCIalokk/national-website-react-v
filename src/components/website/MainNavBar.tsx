@@ -6,7 +6,7 @@ import { Links } from "@/data/Links";
 export const MainNavBar = () => {
     return (
       <header className="flex sticky top-0 border-b bg-slate-50/60 backdrop-blur supports-[backdrop-filter]:bg-background/60 justify-between items-center px-4 md:px-12 py-1 w-full z-50">
-            <a href="/" className="flex items-center text-xl sm:text-2xl font-bold text-primary space-x-2">
+            <a href="#home" className="flex items-center text-xl sm:text-2xl font-bold text-primary space-x-2">
               <Avatar className="h-11 w-11">
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>NA</AvatarFallback>

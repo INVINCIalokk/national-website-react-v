@@ -62,8 +62,8 @@ const BlurImage = ({ card }: { card: Card }) => {
   return (
     <img
       src={card.thumbnail}
-      height="500"
-      width="500"
+      height="1000"
+      width="1000"
       onLoad={() => setLoaded(true)}
       className={cn(
         "object-contain object-center absolute inset-0 h-full w-full transition duration-200",
