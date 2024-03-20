@@ -14,7 +14,7 @@ export const MainNavBar = () => {
                 <AvatarImage src={logo} />
                 <AvatarFallback>NA</AvatarFallback>
               </Avatar>
-              <h1 className='md:text-2xl font-serif md:p-2 font-bold'>NATIONAL ACADMEY</h1>
+              <h1 className='font-semibold text-base md:text-2xl font-serif md:p-2 md:font-bold'>NATIONAL ACADMEY</h1>
             </a>
             <nav className="flex justify-center items-center space-x-2  ">
             <div className='hidden md:flex space-x-2'>
@@ -31,11 +31,11 @@ export const MainNavBar = () => {
             </button>
             </nav> 
             </div> 
-            <div className='flex md:hidden space-x-1 px-2 py-2'> 
+            <div className='flex overflow-x-scroll text-center md:hidden space-x-1 px-2 py-2'> 
               {Links.map(({ href, text }) => (
-                <a key={href} href={href} className="text-[12px] font-medium text-primary bg-gray-50 p-1 rounded-lg md:text-sm hover:text-white hover:bg-indigo-800">{text}</a>
+                <a key={href} href={href} className="text-[12px] font-medium text-primary bg-gray-50 p-1 rounded-lg md:text-sm hover:text-white hover:bg-indigo-800 min-w-[80px]">{text}</a>
               ))}
-            </div> 
+            </div>
       </header>
       
       // </div>
