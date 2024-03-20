@@ -19,26 +19,26 @@ const AboutUsSection = () => {
 
   return (
     <div id="about" className="flex flex-col items-center bg-gradient-to-br from-indigo-950 to-indigo-700 ">
-      <TextGenerateEffect className="mt-8" words={words} />
+      <TextGenerateEffect className="mt-4 md:mt-8" words={words} />
       <TypewriterEffectSmooth
         className="text-3xl md:text-4xl"
         words={[{ text: `"Where Aspirations Become Achievements."`, className: "text-white font-serif" }]}
         cursorClassName="text-3xl md:text-6xl"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 h-auto items-center justify-center mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 h-auto items-center justify-center md:mt-4">
         <div className="col-span-1 flex flex-col items-center justify-center">
-          <p className="text-base font-medium text-amber-400 font-serif md:text-3xl mt-2">Why choose us ?</p>
-          <p className="mt-2 font-mono px-32 py-2 text-sm font-semibold text-teal-300 text-center md:text-lg lg:text-xl">{aboutUsDescription}</p>
+          <p className="text-xl font-medium text-amber-400 font-serif md:text-3xl md:mt-2">Why choose us ?</p>
+          <p className="mt-2 font-mono pb-4 px-2 md:px-28 py-2 text-sm font-semibold text-teal-300 text-center md:text-lg lg:text-xl">{aboutUsDescription}</p>
         </div>
-        <div className="col-span-1 flex flex-col items-center justify-center">
+        <div className="col-span-1 flex flex-col px-4 items-center justify-center">
           <img src={AboutUs} alt="Founder" className="mx-auto" height={500} width={500} />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 py-10 px-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 py-5 px-2 md:gap-10 md:py-10 md:px-20">
         {cards.map(({ image, text }) => (
           <Card key={text}>
             <img src={image} alt="Person" className="mx-auto pb-6" height={100} width={100} />
-            <p className="text-center font-bold text-amber-400 uppercase text-xl md:text-2xl font-sans">{text}</p>
+            <p className="text-center font-bold text-amber-400 uppercase text-base md:text-2xl font-sans">{text}</p>
           </Card>
         ))}
       </div>

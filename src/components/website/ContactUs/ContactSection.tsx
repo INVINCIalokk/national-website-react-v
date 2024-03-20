@@ -3,38 +3,38 @@ import { PhoneCall, Instagram, AtSign, MapPin, Globe } from 'lucide-react';
 import { motion } from "framer-motion";
 
 const ContactSection = () => {
-  const words = "Let's Connect!"
-  const email = "nationalacademy1211@gmail.com"
-  const phoneNumber = "9653660248 / 8692840128"
-  const address = "National Academy, Kalyan(East), 421306, India"
-  const webAddress = "nationalacademyeducation.com"
+  const contactData = [
+    { icon: PhoneCall, text: "Call us at :", text2: "9653660248 / 8692840128" },
+    { icon: AtSign, text: "Email us at :", text2: "nationalacademy1211@gmail.com" },
+    { icon: MapPin, text: "Visit us at :", text2: "National Academy, Kalyan(East), 421306, India", href: "https://www.google.com/maps/search/?api=1&query=National+Academy,+Kalyan(East),+421306,+India" },
+    { icon: Globe, text: "Address on Web :", text2: "nationalacademyeducation.com", href: "https://nationalacademyeducation.com" },
+    { icon: Instagram, text: "Follow us on Instagram :", text2: "national_academy1211", href: "https://www.instagram.com/national_academy1211" },
+  ];
 
   return (
-    <div id="contact" className="grid grid-cols-2 bg-gradient-to-br from-indigo-950 to-indigo-700 h-hero items-center">
+    <div id="contact" className="grid md:grid-cols-2 bg-gradient-to-br from-indigo-950 to-indigo-700 md:h-hero items-center">
       <div className="pl-8 pr-8">
-        <TextGenerateEffect words={words} className=""/>
-        <p className="mt-2 font-mono py-2 text-sm font-semibold text-teal-300 md:text-lg lg:text-xl">
+        <TextGenerateEffect words="Let's Connect!" className="" />
+        <p className="mt-2 mr-8 font-mono py-2 text-sm font-medium md:font-semibold text-teal-300 md:text-lg lg:text-xl">
           We'd love to hear from you! Whether you have a question about our programs, want to schedule a consultation to discuss your academic goals, or simply want to say hello and learn more about what Naction Academy can offer you, we're here for you. Our dedicated team is eager to answer your questions, address any concerns you may have, and provide you with the information you need to make an informed decision about your future.</p>
-        <ul className="mt-4 list-none p-0">
-          <li className="mt-2 flex items-center text-amber-400 font-bold text-lg">
-            <PhoneCall className="h-5 w-5 mr-2" /><span className="text-white">Call us at : </span><a href={`tel:${phoneNumber}`}>&nbsp;&nbsp;{phoneNumber}</a>
-          </li>
-          <li className="mt-2 flex items-center text-amber-400 font-bold text-lg">
-            <AtSign className="h-5 w-5 mr-2" /><span className="text-white">Email us at : </span><a href={`mailto:${email}`}>&nbsp;&nbsp;{email}</a>
-          </li>
-          <li className="mt-2 flex items-center text-amber-400 font-bold text-lg">
-            <MapPin className="h-5 w-5 mr-2" /><span className="text-white">Visit us at :</span><a href={`https://www.google.com/maps/dir//NEAR+JAN+KALYAN+HOSPITAL+HAJIMALANG+ROAD,+Pisavali+Ganv,+Kalyan,+Maharashtra+421306/@19.2404773,73.0845035,13.24z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7956e33f84db1:0x36f607f58177916!2m2!1d73.1289228!2d19.2182169?entry=ttu`} target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;{address}</a>
-          </li>
-          <li className="mt-2 flex items-center text-amber-400 font-bold text-lg">
-            <Globe className="h-5 w-5 mr-2" /><span className="text-white">Address on Web :</span><a href={`https://www.${webAddress}`} target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;{webAddress}</a>
-          </li>
-          <li className="mt-2 flex items-center text-amber-400 font-bold text-lg">
-            <Instagram className="h-5 w-5 mr-2" /><span className="text-white">Follow us on Instagram : </span><a href="https://www.instagram.com/national_academy1211" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;National Academy</a>
-          </li>
-        </ul>
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+          {contactData.map(({ icon: Icon, text, href, text2 }, index) => (
+            <a
+              key={index}
+              href={href || "#"}
+              target={href ? "_blank" : ""}
+              rel={href ? "noopener noreferrer" : ""}
+              className="mt-2 flex items-center text-amber-400 font-bold text-base"
+            >
+              <Icon className="h-8 w-8 mr-2" />
+              <span className="text-amber-400 pr-2">{text}</span>
+              <span className="text-white">{href ? <a href={href} className="text-white font-semibold underline">{text2}</a> : text2}</span>
+            </a>
+          ))}
+        </div>
       </div>
-      <div className="mt-10">
-        <form className="flex flex-col w-full max-w-xl shadow-2xl bg-indigo-950 p-10 rounded-xl mx-auto" style={{fontFamily: 'monospace'}}>
+      <div className="container my-4">
+      <form className="flex overflow-hidden flex-col w-full max-w-xl shadow-2xl bg-indigo-950 p-10 rounded-xl mx-auto" style={{fontFamily: 'monospace'}}>
         <h2 className="text-amber-400 font-bold text-2xl mb-4">Get In Touch</h2>
           <label htmlFor="name" className="text-amber-400 font-mono text-lg mb-2">Name</label>
           <input type="text" id="name" className="border-2 border-indigo-800 p-2 rounded-lg mb-4" />
@@ -60,7 +60,7 @@ const ContactSection = () => {
             </motion.span>
             &#8594;
           </button>
-        </form>
+      </form>
       </div>
     </div>
   )

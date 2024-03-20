@@ -8,13 +8,14 @@ import  LayoutGridDemo from './components/website/Toppers/ToppersSection';
 import TestimonialSection from './components/website/Testimonials/TestimonialSection'
 import AboutUsSection from './components/website/About_Us/AboutUsSection'
 import ContactSection from './components/website/ContactUs/ContactSection'
+import FooterSection from './components/website/Footer/FooterSection'
 
 
 function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <SecondaryNavBar/>
-      <TracingBeam>
+      <TracingBeam className='overflow-clip'>
         <MainNavBar/>
         <HeroSection/>
         <CoursesSection/>
@@ -22,6 +23,7 @@ function App() {
         <TestimonialSection/>
         <AboutUsSection/>
         <ContactSection/>
+        <FooterSection/>
       </TracingBeam>
     </ThemeProvider>
   )
