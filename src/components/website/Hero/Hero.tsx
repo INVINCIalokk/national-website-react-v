@@ -11,7 +11,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 const HeroSection = () => {
     return (
-      <div className="relative bg-gradient-to-br  from-indigo-400 to-indigo-200 md:h-hero" > {/* Responsive container */}
+      <div id="home" className="relative bg-gradient-to-br  from-indigo-400 to-indigo-200 md:h-hero" > {/* Responsive container */}
           <div className="h-14"></div>
           <div className="container mb-3">
           <Card
@@ -41,9 +41,12 @@ const HeroSection = () => {
                   Entrance is the key to success
                 </p>
               </div>
-              <button className="px-4 py-4 rounded-md font-semibold bg-primary text-primary-foreground text-lg hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-                <Contact2 className="mr-2 font-serif cursor-text font-semibold inline-block" /> Contact Us
-              </button>
+              
+                <a href="#contact" className="px-4 py-4 text-center rounded-md font-semibold bg-primary text-primary-foreground text-lg hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                  <Contact2 className="mr-2 font-serif cursor-text font-semibold inline-block" />
+                  Contact Us
+                </a>
+              
             </div>
             <div className="flex items-center justify-center md:order-1">
               <CarouselHero />

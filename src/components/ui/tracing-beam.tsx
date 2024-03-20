@@ -78,7 +78,7 @@ export const TracingBeam = ({
                 ? "none" // if the scroll progress is greater than 0, there is no box shadow
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px", // else it has a box shadow with a specific style
           }}
-          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="ml-[10px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
